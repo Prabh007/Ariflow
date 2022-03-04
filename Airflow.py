@@ -2,7 +2,7 @@
 from datetime import datetime, timedelta
 import airflow
 from airflow import DAG
-from airflow.operators.bash_operator import BashOperator
+from airflow.operators.bash_operator import BashOperator, DummyOperator
 
 ## Create deafult aegument. Basically a python dictionary contains all arguments
 default_args= {
