@@ -2,9 +2,9 @@
 from datetime import datetime, timedelta
 import airflow
 from airflow import DAG
-from airflow.operators.bash_operator import BashOperator, DummyOperator
+from airflow.operators.bash_operator import DummyOperator
 
-## Create deafult aegument. Basically a python dictionary contains all arguments
+## Create deafult argument. Basically a python dictionary contains all arguments
 default_args= {
   'owner':'Prabhat',
   'start_date': datetime(2022,3,4),  ## If want to specify start_date from 5 days ago then can use airflow.dates.days_ago(5) as start_date
